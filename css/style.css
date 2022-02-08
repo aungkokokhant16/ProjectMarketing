@@ -11,7 +11,7 @@ html{
 }
 
 body{
-
+    height: 300vh;
 }
 
 .site-logo{
@@ -31,4 +31,21 @@ body{
     background-repeat: no-repeat;
     background-position: right top;
     background-size: 50%;
+}
+
+.about{
+    background-color: #7E76F910;
+}
+
+.about-text{
+    background-image: url('../img/bg-2.svg');
+    background-size: 100%;
+    background-position: center;
+
+}
+
+@media screen and (max-width:576px) {
+    .content-2,.content-2-text{
+        width: 100% !important;
+    }
 }
