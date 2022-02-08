@@ -11,7 +11,7 @@ html{
 }
 
 body{
-    height: 300vh;
+    height: 500vh;
 }
 
 .site-logo{
@@ -53,11 +53,46 @@ body{
 .services-card{
     border-radius: 35px !important;
     border: none !important;
+    box-shadow: 0 0.5rem 0.5rem rgba(0,0,0,0.15) !important;
+    transition: 0.5s;
+}
+
+.services-card:hover{
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15) !important;
+    transform: scale(0.98);
 }
 
 .services-card-des{
     height: 180px;
     
+}
+
+.pricing {
+    background-color: #7E76F920 ;
+}
+
+.slick-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.slick-dots li{
+    width: 10px !important;
+    height: 10px !important;
+    background-color: #7E76F9 transparent;
+    border: 2px solid #7E76F9;
+    border-radius: 50%;
+
+}
+
+.slick-dots li.slick-active{
+    width: 15px !important;
+    height: 15px !important;
+    background-color: #7E76F9;
+
 }
 @media screen and (max-width:576px) {
     .content-2,.content-2-text{
