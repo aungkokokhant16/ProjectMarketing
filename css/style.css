@@ -44,6 +44,21 @@ body{
 
 }
 
+.services-text{
+    background-image: url('../img/bg-3.svg');
+    background-size: 100%;
+    background-position: center;
+}
+
+.services-card{
+    border-radius: 35px !important;
+    border: none !important;
+}
+
+.services-card-des{
+    height: 180px;
+    
+}
 @media screen and (max-width:576px) {
     .content-2,.content-2-text{
         width: 100% !important;
