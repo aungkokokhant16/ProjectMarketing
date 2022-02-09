@@ -91,11 +91,23 @@ body{
 .slick-dots li.slick-active{
     width: 15px !important;
     height: 15px !important;
-    background-color: #7E76F9;
+    background-color: #7E76F9 !important;
 
+}
+
+.footer {
+    background-image: url(../img/footer1.svg),url(../img/footer2.svg);
+    /* height: 350px; */
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 150px 0 0 0;
 }
 @media screen and (max-width:576px) {
     .content-2,.content-2-text{
         width: 100% !important;
+    }
+    .footer{
+        background-size: cover;
+        background-position: center;
     }
 }
