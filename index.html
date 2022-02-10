@@ -4,34 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Marketing</title>
+    <link rel="icon" href="img/logo.svg">
     <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="vendor/slick/slick/slick.css"/>
     <link rel="stylesheet" href="vendor/fontawesome-free-6.0.0-web/css/all.css">
     <link rel="stylesheet" type="text/css" href="vendor/slick/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="vendor/animate_it/animate.css">
+    <link rel="stylesheet" href="css/style.css">
 				
 </head>
 <body>
     <!-- NavBar Start -->
-   <header>
-    <div class="container-fluid site-nav">
+   <header class="container-fluid site-nav animated slideInDown" >
+    
         <div class="row">
             <div class="container">
                 <div class="row">
-                    <div class="col-12">
-                     <nav class="navbar navbar-expand-lg navbar-dark d-flex align-items-center ">
+                    <div class="col-12 px-0">
+                     <nav class="navbar navbar-expand-lg navbar-dark d-flex align-items-center  ">
                          <a class="navbar-brand " href="#">
                              <img src="img/logo.svg" class="site-logo" alt="">
                          </a>
-                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                           <span class="navbar-toggler-icon"></span>
+                         <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">                     
+                            <i class="fa-solids fa fa-bars fa-2x menu-icon"></i>
                          </button>
-                       
+                         
+                         
+
                          <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                            <ul class="navbar-nav">
                              <li class="nav-item active">
-                               <a class="nav-link text-uppercase" href="#">Home <span class="sr-only">(current)</span></a>
+                               <a class="nav-link text-uppercase" href="#home">Home <span class="sr-only">(current)</span></a>
                              </li>
                              
                              <li class="nav-item dropdown">
@@ -47,16 +51,16 @@
                              </li>
  
                              <li class="nav-item">
-                                 <a  class="nav-link text-uppercase" href="#">Blog</a>
+                                 <a  class="nav-link text-uppercase" href="#pricing">Pricing</a>
                              </li>
  
                              <li class="nav-item">
-                                 <a  class="nav-link text-uppercase" href="#">About</a>
+                                 <a  class="nav-link text-uppercase" href="#about">About</a>
                              </li>
                              
                              
                              <li class="nav-item">
-                                 <a  class="nav-link text-uppercase" href="#">Contact Us</a>
+                                 <a  class="nav-link text-uppercase" href="#contact">Contact Us</a>
                              </li>
                              
                            </ul>
@@ -66,53 +70,78 @@
                     </div>
                 </div>
             </div>
-        </div>
+        
     </div>
    </header>
     <!-- NavBar End -->
 
     <!-- Home Start-->
-   <section>
-    <div class="container-fluid home">
+   <section id="home" class=" container-fluid home">
+    <div class="container-fluid ">
         <div class="row">
-            <div class="container">
-                <div class="row min-vh-100 align-items-center flex-column-reverse flex-md-row">
-                    <div class="col-12  col-md-6">
-                         <div class="my-3">
-                             <h4 class="text-uppercase">Social Media</h4>
-                             <h1 class="text-uppercase font-weight-bolder text-primary"> For Business</h1>
-                             <p class="text-uppercase text-black-50">Performance Based Social Media 
-                                 <br class="d-block d-md-none d-lg-block">
-                                 We Are Lorem Media
-                             </p>
-                             <a href="#" class="btn btn-primary text-uppercase">Get a free started</a>
-                         </div>
- 
-                    </div>
-                    <div class="col-12 col-md-6">
-                        <div class="my-3 mr-5 mr-md-0">
-                            <img src="img/content1.svg" class="w-100" alt="">
+            <div class="col-12">
+                <div class="container">
+                    <div class="row min-vh-100 align-items-center flex-column-reverse flex-md-row">
+                        <div class="col-12  col-md-6">
+                             <div class="my-3 animated slideInLeft ani-delay" >
+                                 <h4 class="text-uppercase">Social Media</h4>
+                                 <h1 class="text-uppercase font-weight-bolder text-primary"> For Business</h1>
+                                 <p class="text-uppercase text-black-50">Performance Based Social Media 
+                                     <br class="d-block d-md-none d-lg-block">
+                                     We Are Lorem Media
+                                 </p>
+                                 <a href="#" class="btn btn-primary text-uppercase">Get a free started</a>
+                             </div>
                         </div>
+                        <div class="col-12 col-md-6" >
+                            <div class="my-3 mr-5 mr-md-0 animated slideInRight ani-delay2">
+                                <img src="img/content1.svg" class="w-100" alt="">
+                            </div>
+                        </div>
+
                     </div>
-                    
                 </div>
             </div>
+          
         </div>
     </div>
+
+    <div class="social-v animated slideInLeft ani-delay3 align-items-center">
+        <a href="">
+            <i class="fa-brands fa-facebook-f"></i>
+        </a>
+        <a href="">
+            <i class="fa-brands fa-google"></i>
+        </a>
+        <a href="">
+            <i class="fa-brands fa-twitter"></i> 
+        </a>
+        <a href="">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+
+        <a  class="bg-primary" style="width: 5px; height: 25px; ">
+
+        </a>
+    </div>
+
+    <a href="#about" class="scroll-to-next shadow animated fadeIn ani-delay4 " >
+       <img src="img/mouse.svg" class="animated bounce" style=" width:20px; animation-iteration-count: infinite;" alt="" >
+    </a >
    </section>
    <!-- Home End -->
 
    <!-- About Start -->
-   <section class="container-fluid about">
+   <section id="about" class="container-fluid about ">
         <div class="row align-items-center py-5 py-md-0 min-vh-100">
             <div class="col-12 col-md-6 py-3 py-md-5">
-               <div class="text-right mr-5 mr-md-0">
+               <div class="text-right mr-5 mr-md-0 wow slideInLeft">
                    <img src="img/content2.svg " class="w-75 content-2" alt="">
                </div>
             </div>
 
             <div class="col-12 col-md-6 about-text py-3 py-md-5 ">
-                <div class="w-75 content-2-text">
+                <div class="w-75 content-2-text wow slideInRight">
                     <p class="text-secondary">Biography</p>
                     <h4 class="text-uppercase">Who We Are</h4>
                     <p class="text-black-50">
@@ -131,18 +160,18 @@
    <!-- About End -->
 
    <!-- Section Services Start -->
-   <section class="container-fluid services services-text">
-    <div class="row min-vh-100 ">
-        <div class="container  ">
+   <section id="services" class="container-fluid services services-text">
+    <div class="row min-vh-100">
+        <div class="container">
             <div class="row  pt-5">
                 <div class="col-12">
-                   <div class="my-5">
-                    <p class=" text-secondary ">Our Services</p>
+                   <div class="my-5 wow slideInDown">
+                    <p class=" text-secondary">Our Services</p>
                     <h4 class=" text-uppercase font-weight-bolder">What we Offer</h4>
                    </div>
                 </div>
                <div class="col-12 col-md-4">
-                    <div class="card shadow mb-5 services-card">
+                    <div class="card shadow mb-5 services-card wow animated slideInRight ani-delay">
                         <div class="card-body">
                             <div class="">
                                 <img src="img/icon-1.svg"  alt="">
@@ -160,7 +189,7 @@
                </div>
 
                <div class="col-12 col-md-4">
-                <div class="card shadow mb-5 services-card">
+                <div class="card shadow mb-5 services-card wow animated  slideInRight ani-delay2 ">
                     <div class="card-body">
                         <div class="">
                             <img src="img/icon-2.svg"  alt="">
@@ -178,7 +207,7 @@
                 </div>
 
            <div class="col-12 col-md-4">
-            <div class="card shadow mb-5 services-card">
+            <div class="card shadow mb-5 services-card wow animated slideInRight ani-delay3">
                 <div class="card-body">
                     <div class="">
                         <img src="img/icon-3.svg"  alt="">
@@ -196,7 +225,7 @@
             </div>
 
        <div class="col-12 col-md-4">
-        <div class="card shadow mb-5 services-card">
+        <div class="card shadow mb-5 services-card wow  animated slideInLeft  ani-delay3">
             <div class="card-body">
                 <div class="">
                     <img src="img/icon-4.svg"  alt="">
@@ -214,7 +243,7 @@
         </div>
 
         <div class="col-12 col-md-4">
-            <div class="card shadow mb-5 services-card">
+            <div class="card shadow mb-5 services-card wow animated slideInLeft ani-delay2">
             <div class="card-body">
             <div class="">
                 <img src="img/icon-5.svg"  alt="">
@@ -232,7 +261,7 @@
         </div>
 
         <div class="col-12 col-md-4">
-            <div class="card shadow mb-5 services-card">
+            <div class="card shadow mb-5 services-card wow animated slideInLeft ani-delay">
                 <div class="card-body">
                     <div class="">
                         <img src="img/icon-6.svg"  alt="">
@@ -255,18 +284,18 @@
    <!-- Section Services End -->
 
    <!-- Pricing Start -->
-        <section class=" container-fluid pricing">
+        <section id="pricing" class=" container-fluid pricing">
             <div class="row">
                 <section class=" container">
                     <div class="row text-center">
                         <div class="col-12">
-                            <div class="my-5">
+                            <div class="my-5 wow slideInDown ani-delay2">
                              <p class=" text-secondary "> Pricing</p>
                              <h4 class=" text-uppercase font-weight-bolder">Our Pricing</h4>
                             </div>
                          </div>
                     </div>
-                    <div class="row py-5 pricing-slide">
+                    <div class="row py-5 pricing-slide wow slideInDown ">
                         <div class="col-12 col-md-4">
                             <div class="card shadow mb-5 services-card">
                                 <div class="card-body text-center">
@@ -410,7 +439,7 @@
    <!-- Pricing End -->
 
     <!-- Contact Area Start -->
-        <section class=" container-fluid contact ">
+        <section id="contact" class=" container-fluid contact ">
             <div class="row">
                 <div class="container">
                     <div class="row py-5">
@@ -537,13 +566,17 @@
             </div>
         </section>
     <!-- Contact Area End -->
+    <script src="js/jquery-3.5.1.min.js"></script>
       <script src="js/bootstrap.bundle.min.js"></script>
-      <script src="js/jquery-3.5.1.min.js"></script>
-        <script src="vendor/slick/slick.jquery.json"></script>
+      
+    
         <script  src="vendor/slick/slick/slick.min.js"></script>
         <script src="vendor/fontawesome-free-6.0.0-web/js/all.js"></script>
+        <script src="vendor/wow/wow.js"></script>
+        <script src="js/app.js"></script>
 
       <script >
+          new WOW().init();
          
          $(document).ready(function(){
             $('.pricing-slide').slick({
