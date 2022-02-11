@@ -54,6 +54,22 @@ body{
     outline: none;
 }
 
+.nav-link .current-section{
+    border: 2px solid #1A129F;
+    border-radius: 10em;
+    padding: 0.5rem 1.3rem !important;
+}
+
+
+
+.site-nav-scroll .nav-link.current-section{
+    border: 2px solid #1A129F;
+    border-radius: 10em;
+    padding: 0.5rem 1.3rem !important;
+}
+
+
+
 .home{
     background-image: url(../img/bg-shape.svg);
     background-repeat: no-repeat;
@@ -61,6 +77,10 @@ body{
     background-size: 50%;
     position: relative;
    
+}
+
+.nav-link{
+    padding: 0.5rem 1.3rem !important;
 }
 
 .scroll-to-next{
@@ -91,6 +111,25 @@ body{
 .social-v a{
     display: block;
     margin-bottom: 10px;
+    transition: 0.5s;
+}
+
+.social-v a:hover{
+    transform: scale(2);
+
+}
+.services-card img{
+    transition: 0.5s;
+}
+.services-card:hover img{
+    transform: translateX(20px);
+}
+
+.social-icon a{
+    transition: 0.5s;
+}
+.social-icon a:hover{
+    transform: scale(1.5);
 }
 .about{
     background-color: #7E76F910;
@@ -154,12 +193,20 @@ body{
 
 }
 
-.footer {
+.contact {
     background-image: url(../img/footer1.svg),url(../img/footer2.svg);
     /* height: 350px; */
-    background-size: 100%;
+    background-size: auto 80%;
+    /* background-position-y: inherit; */
     background-repeat: no-repeat;
     padding: 150px 0 0 0;
+    background-position: bottom;
+    background-attachment: fixed;
+    
+}
+
+.footer{
+    padding-top: 150px;
 }
 
 .ani-delay{
@@ -208,6 +255,16 @@ body{
         box-shadow: 0 0 5px #00000015;
         border-radius: 10em;
     }
+
+     .nav-link.current-section{
+        border: 2px solid #1A129F;
+        border-radius: 10em;
+        padding: 0.5rem 1.3rem !important;
+    }
+
+    .contact{
+        background-size: auto 80%;
+    }
     
 }
 @media screen and (max-width:576px) {
@@ -254,5 +311,10 @@ body{
         right: 30px;
         left: auto;
 
+    }
+     .nav-link.current-section{
+        border: 2px solid #1A129F;
+        border-radius: 10em;
+        padding: 0.5rem 1.3rem !important;
     }
 }
